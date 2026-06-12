@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surpresa para minha estrelinha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="game-body">
+  <canvas id="background"></canvas>
+  <div class="mist mist-one"></div>
+  <div class="mist mist-two"></div>
+  <div class="vignette"></div>
+
+  <main class="page game-page">
+    <section class="card game-card">
+      <div class="glow"></div>
+      <p class="eyebrow">Uma brincadeira para</p>
+      <h1 class="game-title">minha estrelinha</h1>
+      <p class="nicknames">pitiquinha • miudinha • dona do meu coração</p>
+
+      <div class="love-meter" aria-label="Medidor do amor">
+        <div id="meterFill"></div>
+      </div>
+      <p class="game-status" id="gameStatus">Toque nos corações escondidos para abrir a homenagem.</p>
+
+      <div class="heart-hunt" id="heartHunt">
+        <button class="hunt-heart" style="--x:10%; --y:18%; --d:.1s">❤</button>
+        <button class="hunt-heart" style="--x:70%; --y:12%; --d:.4s">❤</button>
+        <button class="hunt-heart" style="--x:36%; --y:46%; --d:.7s">❤</button>
+        <button class="hunt-heart" style="--x:82%; --y:58%; --d:1s">❤</button>
+        <button class="hunt-heart" style="--x:18%; --y:76%; --d:1.3s">❤</button>
+      </div>
+
+      <article class="letter final-letter" id="finalLetter">
+        <h2>Minha pitiquinha...</h2>
+        <p>
+          Você encontrou todos os corações, mas o maior deles sempre esteve comigo:
+          é o meu, batendo mais forte por você todos os dias.
+        </p>
+        <p>
+          Minha miudinha, eu amo seu jeito, sua luz, seu carinho e até os detalhes
+          pequenos que talvez você nem perceba, mas que para mim são gigantes.
+        </p>
+        <p>
+          Minha estrelinha, você ilumina meus dias mais escuros, deixa meu mundo
+          mais bonito e me faz sentir que amar você é uma das partes mais lindas
+          da minha vida.
+        </p>
+        <strong>Eu te amo intensamente, hoje, amanhã e sempre. ❤</strong>
+      </article>
+
+      <div class="actions">
+        <button id="resetGame">Recomeçar</button>
+        <a class="game-link" href="index.html">Voltar para a cartinha</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="surpresa.js"></script>
+</body>
+</html>
